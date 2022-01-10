@@ -1,0 +1,11 @@
+{% load unicorn %}
+<div class="mvlist-container">
+    <div class="list-container">
+    {% for items in data.list.results  %}
+        <ul id='{{items.id}}' class="" unicorn:click='onTitleClick("{{items.title}}","{{items.overview}}","{{items.poster_path}}")'>{{ items.title }}</ul>
+    {% endfor %}
+    </div>
+    {% block moviePreview %}
+        {% unicorn 'moviePreview' %}
+    {% endblock %}
+</div>

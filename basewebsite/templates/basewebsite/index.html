@@ -1,0 +1,14 @@
+{% load static %}
+{% load unicorn %}
+<html>
+<link rel="stylesheet" type="text/css" href="{% static 'basewebsite/style.css' %}">
+  <head>
+    {% unicorn_scripts %}
+  </head>
+  <body>
+    {% csrf_token %}
+    <div class="main-container">
+      {% unicorn 'index' key="index-movies" with data=data %}
+    </div>
+  </body>
+</html>

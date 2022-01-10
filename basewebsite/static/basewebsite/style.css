@@ -1,0 +1,58 @@
+
+body {
+    margin: 0px;
+    height: 100vh;
+}
+
+.main-container {
+    display: grid;
+    overflow-y: hidden;
+    height: 100%;
+}
+
+.mvlist-container {
+    display: flex;
+    overflow-y: scroll;
+}
+
+.preview-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.list-container {
+    width: 25%;
+    overflow-y: scroll;
+    background-color: red;
+}
+
+.preview-container {
+    width: 75%;
+    padding-top: 40px;
+}
+
+.preview-container div {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.list-container ul:hover {
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+.list-container ul {
+    padding: 10px;
+    margin: 10px 0 0 30px;
+}
+
+.preview-desc {
+    width: 90%;
+}
+
+.selected {
+    background-color: black;
+    color: white;
+}

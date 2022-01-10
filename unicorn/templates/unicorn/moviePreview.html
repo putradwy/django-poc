@@ -1,0 +1,23 @@
+<div class="preview-container">
+    {% if data.selected.title != '' %}
+    <div>
+        <img src='https://image.tmdb.org/t/p/w780{{data.selected.img}}'/>
+    </div>
+    <div>
+        <h1>{{ data.selected.title }}</h1>
+    </div>
+    <div class="preview-desc">
+        <label>{{ data.selected.desc }}</label>
+    </div>
+    {% else %}
+    <div>
+        <img src='https://image.tmdb.org/t/p/w780{{data.list.results.0.poster_path}}'/>
+    </div>
+    <div>
+        <h1>{{ data.list.results.0.title }}</h1>
+    </div>
+    <div class="preview-desc">
+        <label>{{ data.list.results.0.overview }}</label>
+    </div>
+    {% endif %}
+</div>
