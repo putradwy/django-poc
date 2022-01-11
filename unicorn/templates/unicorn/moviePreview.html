@@ -1,13 +1,13 @@
 <div class="preview-container">
     {% if data.selected.title != '' %}
     <div>
-        <img src='https://image.tmdb.org/t/p/w780{{data.selected.img}}'/>
+        <img src='https://image.tmdb.org/t/p/w780{{img}}'/>
     </div>
     <div>
-        <h1>{{ data.selected.title }}</h1>
+        <h1>{{ title }}</h1>
     </div>
     <div class="preview-desc">
-        <label>{{ data.selected.desc }}</label>
+        <label>{{ desc }}</label>
     </div>
     {% else %}
     <div>
