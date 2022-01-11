@@ -2,7 +2,7 @@
 <div class="mvlist-container">
     <div class="list-container">
     {% for items in data.list.results  %}
-        <ul id='{{items.id}}' unicorn:click='onTitleClick("{{items.title}}","{{items.overview}}","{{items.poster_path}}")'>{{ items.title }}</ul>
+        <ul id="{{items.id}}" unicorn:model.lazy="{{items.id}}-{{items.title}}" unicorn:click='onTitleClick("{{items.title}}","{{items.overview}}","{{items.poster_path}}")'>{{ items.title }}</ul>
     {% endfor %}
     </div>
     {% block moviePreview %}
